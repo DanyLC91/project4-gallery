@@ -1,0 +1,73 @@
+{% load static %}
+
+<!-- Include Bootstrap stylesheet from CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Navigation bar with Bootstrap styling -->
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+    <!-- Navbar toggle button for mobile view -->
+    <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Collapsible navbar content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Navbar items aligned to the left -->
+        <ul class="navbar-nav mr-auto">
+            <!-- Brand/logo item -->
+            <li class="nav-item"> 
+                <a class="navbar-brand" href="{% url 'index' %}">
+                    <!-- Load and display the logo from static files -->
+                    <img src="{% static 'img/banner-logo/favicon_logo.png' %}" alt="logo" width="30">
+                </a>
+            </li>
+            
+            <!-- Home page item with 'active' class for current page -->
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <!-- About Us page item -->
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About Us</a>
+            </li>
+            
+            <!-- Exhibitions page item -->
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'exhibition' %}">Exhibitions</a>
+            </li>
+            
+            <!-- Contact page item -->
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Include jQuery, Popper.js, and Bootstrap JS scripts from CDNs -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Script to toggle the mobile menu -->
+<script>
+    // Function to toggle the mobile menu
+    function toggleMobileMenu() {
+        var navbar = document.querySelector('.navbar-collapse');
+        if (navbar.classList.contains('show')) {
+            navbar.classList.remove('show');
+        } else {
+            navbar.classList.add('show');
+        }
+    }
+
+    // Attach the toggle function to the menu button
+    document.querySelector('.navbar-toggler').addEventListener('click', toggleMobileMenu);
+
+    // Attach the toggle function to each menu item
+    var menuItems = document.querySelectorAll('.navbar-nav .nav-item a');
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', toggleMobileMenu);
+    });
+</script>
