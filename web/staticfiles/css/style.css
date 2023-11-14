@@ -85,3 +85,19 @@ Size, transformation and tracition  styling of images
 .home-gallery:hover .box {
     filter: grayscale(1);
 }
+
+/* About Us Styles */
+
+#about-us {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: normal;
+    margin: 10%;
+}
+
+/* Responsive Two-Column Grid */
+.responsive-two-column-grid {
+    display: block;
+}
