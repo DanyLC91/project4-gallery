@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Heading for the home page -->
+    <h1>home</h1>
+
+    <!-- Full-width image -->
+    <div class="container-fluid p-0">
+        <img src="{% static 'img/banner-logo/home-page.png' %}" alt="Full-width image" style="width: 100%; height: auto;">
+    </div>
+
+    <!-- Logo section -->
+    <div class="home-logo">
+        <img src="{% static 'img/banner-logo/Hawthorne-logo.png' %}" alt="Hawthorne logo">
+    </div>
+
+    <!-- Section introducing the concept of discovering new artists -->
+    <div class="home-one">
+        <h1>Discover New Artists</h1>
+    </div>
+
+
+    <!-- Section encouraging to reimagine the world -->
+    <div class="home-two">
+        <h1>Reimagine Your World</h1>
+    </div>
+{% endblock %}

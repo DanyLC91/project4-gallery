@@ -31,3 +31,24 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/*Home page*/
+
+/* Phrase Banner and Backgrounds Style*/
+.home-one {
+    padding: 150px;
+    text-align: center;
+    background: rgb(154, 148, 213);
+    background: radial-gradient(circle, rgba(154, 148, 213, 1) 0%, rgba(56, 200, 154, 1) 100%);
+    color: white;
+    font-size: xx-large;
+}
+
+.home-two {
+    padding: 150px;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    background: rgb(183, 98, 240);
+    background: linear-gradient(90deg, rgba(183, 98, 240, 1) 0%, rgba(238, 60, 60, 1) 50%, rgba(255, 171, 53, 1) 100%);
+}
