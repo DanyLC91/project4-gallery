@@ -16,7 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from . import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
+# Define the URL patterns for the Django application
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index, name="index"),
+    path('about', views.about, name="about"),
+    path('exhibition', views.exhibition, name="exhibition"),
+    path('contact', views.contact, name="contact"),
 ]
+
+# Include staticfiles URL patterns to serve static files during development
+urlpatterns += staticfiles_urlpatterns()
