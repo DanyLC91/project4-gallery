@@ -26,24 +26,6 @@ footer {
     margin: 3%;
 }
 
-/* Navigation Bar Hover Style */
-.navbar .nav-link:hover {
-    background-color: rgb(170, 170, 170);
-    color: white;
-}
-
-/* Footer Style */
-html,
-body {
-    height: 100%;
-}
-
-footer {
-    position: inherit;
-    bottom: 0;
-    width: 100%;
-}
-
 /*Home page*/
 
 /* Phrase Banner and Backgrounds Style*/
@@ -63,6 +45,17 @@ footer {
     font-size: xx-large;
     background: rgb(183, 98, 240);
     background: linear-gradient(90deg, rgba(183, 98, 240, 1) 0%, rgba(238, 60, 60, 1) 50%, rgba(255, 171, 53, 1) 100%);
+}
+.home-logo {
+
+    text-align: center;
+    margin-top: -10rem;
+    margin-bottom: -10rem;
+}
+
+.home-logo img {
+    max-width: 90%;
+    max-height: 90%;
 }
 
 /* Gallery Cards Style
