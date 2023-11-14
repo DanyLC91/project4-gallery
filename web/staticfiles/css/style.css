@@ -101,3 +101,18 @@ Size, transformation and tracition  styling of images
 .responsive-two-column-grid {
     display: block;
 }
+
+/* Exhibitions Styles */
+.ex-one-text {
+    color: white;
+    font-size:10v;
+    margin-top: 50px;
+    padding-top: 150px;
+    margin-left: 10%;
+}
+
+#ex-bk {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
