@@ -329,3 +329,51 @@ Size, transformation and tracition  styling of images
     clip-path: circle(var(--_c,55% at 30% 30%));
     place-self: end;
 }
+
+/*Contact Us Page*/
+
+* Container Box Styling */
+.cont-box {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+}
+
+/* Input and Textarea Styling */
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #2980b9;
+}
