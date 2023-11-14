@@ -85,6 +85,66 @@ Size, transformation and tracition  styling of images
 .home-gallery:hover .box {
     filter: grayscale(1);
 }
+.home-gallery .box:hover {
+    filter: grayscale(0) brightness(1.25);
+}
+
+.home-gallery:has(.one:hover) {
+    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr;
+}
+
+.home-gallery:has(.two:hover) {
+    grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
+}
+
+.home-gallery:has(.three:hover) {
+    grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr;
+}
+
+.home-gallery:has(.four:hover) {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 2fr;
+}
+
+.home-gallery .box::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: calc(100% + 2px);
+    background: linear-gradient(white, transparent, transparent, white);
+}
+
+.home-gallery .box:nth-child(even) {
+    transform: translateY(30px);
+}
+
+.home-gallery .box:nth-child(odd) {
+    transform: translateY(-30px);
+}
+
+.home-gallery .box::after {
+
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    background: white;
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 5px 10px;
+    white-space: nowrap;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.home-gallery .box:hover::after {
+    opacity: 1;
+    bottom: -60px;
+    transition-delay: 0.25s;
+}
 
 /* About Us Styles */
 
