@@ -211,3 +211,62 @@ Size, transformation and tracition  styling of images
         background-position: 0 50%;
     }
 }
+
+/* Second Exhibition Background Styling */
+.ex-bk2 {
+    height: 5rem;
+    width: 100%;
+    margin-top: -5rem;
+    background: rgb(240, 155, 98);
+    background: linear-gradient(180deg, rgba(240, 155, 98, 1) 0%, rgba(222, 161, 161, 1) 48%, rgba(60, 119, 140, 1) 100%);
+}
+
+.rm-gallery {
+    --s: 200px; /* control the size */
+    --g: 8px;   /* control the gap */
+
+    display: grid;
+    grid: auto-flow var(--s)/repeat(2,var(--s));
+    gap: var(--g);
+    position: absolute;
+    top: 140%;
+    right: 0;
+    height: 100vh; /* Make the gallery take the full height of the viewport */
+}
+
+.rm-gallery > img {
+    width: 100%;
+    aspect-ratio: 1;
+    cursor: pointer;
+    filter: grayscale();
+    z-index: 0;
+    transition: .25s,z-index 0s .25s;
+}
+
+.rm-gallery > img:hover {
+    width: calc(200% + var(--g));
+    filter: grayscale(0);
+    z-index: 1;
+    --_c: 50%;
+    transition: .4s,z-index 0s;
+}
+
+.rm-gallery > img:nth-child(1) {
+    clip-path: circle(var(--_c,55% at 70% 70%));
+    place-self: start;
+}
+
+.rm-gallery > img:nth-child(2) {
+    clip-path: circle(var(--_c,55% at 30% 70%));
+    place-self: start end;
+}
+
+.rm-gallery > img:nth-child(3) {
+    clip-path: circle(var(--_c,55% at 70% 30%));
+    place-self: end start;
+}
+
+.rm-gallery > img:nth-child(4) {
+    clip-path: circle(var(--_c,55% at 30% 30%));
+    place-self: end;
+}
