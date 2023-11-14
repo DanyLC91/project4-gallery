@@ -1,3 +1,9 @@
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 /* Navigation Bar Hover Style */
 .navbar .nav-link:hover {
     background-color: rgb(170, 170, 170);
@@ -14,7 +20,13 @@ footer {
     position: inherit;
     bottom: 0;
     width: 100%;
-}/* Navigation Bar Hover Style */
+}
+.social{
+    max-width: 50px;
+    margin: 3%;
+}
+
+/* Navigation Bar Hover Style */
 .navbar .nav-link:hover {
     background-color: rgb(170, 170, 170);
     color: white;
