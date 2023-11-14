@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Exhibitions{% endblock %}
+
+{% block content %}
+
+<!-- First Exhibition Section -->
+<div id="ex-bk" class="ex-background">
+    <div class="ex-one-text">
+        <!-- Heading for the First Exhibition -->
+        <h1>What's On?</h1>
+        <br>
+        <br>
+        <!-- Details of the First Exhibition -->
+        <h3>Petteri Nikolić Hyperrealism Exhibition</h3><br>
+        <p id="ex-syn"> Each stroke captures the essence of human emotion <br>
+            with unprecedented precision. Nikolić's mastery <br>
+            transforms canvases into living reflections, <br>
+            inviting viewers to explore the profound connection <br>
+            between art and reality.
+        </p>
+        <!-- Image Gallery for the First Exhibition -->
+        <div>
+            <img class="png-imgs"  src="{% static 'img\Artist1-Petteri-Nikolić\Petteri-Nikolić-img1.png' %}">
+            <img class="png-imgs" src="{% static 'img\Artist1-Petteri-Nikolić\Petteri-Nikolić-img2.png' %}">
+            <img class="png-imgs"  src="{% static 'img\Artist1-Petteri-Nikolić\Petteri-Nikolić-img3.png' %}">
+            <img class="png-imgs" src="{% static 'img\Artist1-Petteri-Nikolić\Petteri-Nikolić-img4.png' %}">
+            <img class="png-imgs" src="{% static 'img\Artist1-Petteri-Nikolić\Petteri-Nikolić-img5.png' %}">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
