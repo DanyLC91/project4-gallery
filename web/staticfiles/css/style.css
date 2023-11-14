@@ -377,3 +377,67 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+
+
+@media (max-width: 850px) {
+    /* Styles for screens up to 768px width (typical tablet and mobile sizes) */
+
+    .png-imgs {
+        height: 15%;
+        left: 70px;
+        margin-top: auto;
+    }
+
+    /* Hide the last two images on mobile */
+    .png-imgs:nth-child(n+4) {
+        display: none;
+    }
+
+    /* Adjust the offset distance for the remaining three images */
+    .png-imgs:nth-child(1),
+    .png-imgs:nth-child(2),
+    .png-imgs:nth-child(3) {
+        offset-distance: 33%;
+    }
+
+    /* Add any additional mobile-specific styles as needed */
+
+    /*gallery 2*/
+    .rm-gallery {
+        position: relative;
+        top: auto;
+        right: auto;
+        height: auto;
+        margin-top: 20px; /* Adjust the margin as needed */
+    }
+
+    /*background 2*/
+    .ex-bk2 {
+        height: auto;
+        margin-top: 0;
+    }
+
+    /*contact*/
+    .contact-box{
+		grid-template-columns: 1fr;
+	}
+	.cont-left{
+		height: 200px;
+	}
+}
+@media (max-width: 990px){
+     /*gallery 2*/
+     .rm-gallery {
+        position: relative;
+        top: auto;
+        right: auto;
+        height: auto;
+        margin-top: 20px; /* Adjust the margin as needed */
+    }
+
+    /*background 2*/
+    .ex-bk2 {
+        height: auto;
+        margin-top: 0;
+    }
+}
