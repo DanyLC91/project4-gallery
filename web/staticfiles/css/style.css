@@ -1,0 +1,33 @@
+/* Navigation Bar Hover Style */
+.navbar .nav-link:hover {
+    background-color: rgb(170, 170, 170);
+    color: white;
+}
+
+/* Footer Style */
+html,
+body {
+    height: 100%;
+}
+
+footer {
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+}/* Navigation Bar Hover Style */
+.navbar .nav-link:hover {
+    background-color: rgb(170, 170, 170);
+    color: white;
+}
+
+/* Footer Style */
+html,
+body {
+    height: 100%;
+}
+
+footer {
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+}
