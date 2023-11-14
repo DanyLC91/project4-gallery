@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+
+<!-- Responsive Two-Column Grid -->
+<div class="responsive-two-column-grid">
+    <!-- Container for About Us Heading -->
+    <div class="container d-flex justify-content-center align-items-center" style="margin-top: 20%; font-size: xx-large;">
+        <h1>About Us</h1>
+    </div>
+
+    <!-- Container for Logo -->
+    <div class="d-flex justify-content-center align-items-center">
+        <img src="{% static 'img/banner-logo/logo.png' %}" alt="logo" class="img-fluid p-0" style="width: 40%; margin-top: 20%;">
+    </div>
+</div>
+
+<!-- About Us Section -->
+<div id="about-us">
+
+    <!-- Paragraph 1 -->
+    <p>Hawthorne Fine Art Gallery is an art institution rooted in the heart of Dublin, where the world of contemporary
+        and modern art comes to life. Founded with a deep-seated love for art, our gallery serves as a platform for artists
+        to showcase their creativity and for art enthusiasts to appreciate their work.</p><br>
+
+    <!-- Paragraph 2 -->
+    <p>Located on the historic Temple Bar district, Hawthorne Fine Art Gallery is housed in a beautifully restored
+        townhouse. Steeped in local history, this space provides a warm and inviting atmosphere for visitors to explore our
+        carefully curated collection. Our exhibitions feature a wide array of contemporary and modern artworks, offering a
+        glimpse into the ever-evolving art landscape.</p><br>
+
+    <!-- Paragraph 3 -->
+    <p>In today's interconnected world, we recognize the importance of accessibility. Hawthorne Fine Art Gallery extends its
+        reach beyond our physical location, providing art lovers with an online platform where they can browse, acquire, and
+        enjoy art from the comfort of their homes. This digital presence allows us to share the beauty and significance of
+        art with a global audience.</p><br>
+
+    <!-- Paragraph 4 -->
+    <p>Join us on a journey through the world of contemporary and modern art. Whether you're an experienced collector, a
+        burgeoning artist, or simply someone who appreciates the power of artistic expression, Hawthorne Fine Art Gallery
+        welcomes you to explore, connect, and be inspired. Experience the diverse and dynamic art world through our
+        gallery's physical presence and online platform. Hawthorne Fine Art Gallery is not just a place; it's a celebration
+        of creativity and a hub for the art community.</p><br>
+</div>
+{% endblock %}
