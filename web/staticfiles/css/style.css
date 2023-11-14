@@ -184,8 +184,30 @@ Size, transformation and tracition  styling of images
     margin-left: 10%;
 }
 
+/* Background Animation for Exhibition Section 1 */
 #ex-bk {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+/*Colours and Gradient transition and animation*/
+.ex-background {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 300% 300%;
+    animation: color 25s ease-in-out infinite;
+}
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
