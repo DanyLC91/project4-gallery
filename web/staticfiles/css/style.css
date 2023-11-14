@@ -212,6 +212,52 @@ Size, transformation and tracition  styling of images
     }
 }
 
+/*Gallery 1*/
+
+.png-imgs {
+    border-radius: 15% / 45%;
+    height: 25%;
+    width: auto;
+    position: absolute;
+    margin-top: 10%;
+    left: 25%;
+    offset-path: path('m 0 50 q 50-30 100-30 t 100 30 100 0 100-30 100 30');
+    box-shadow: 1px 1px 3px #0008;
+    transition: transform .4s ease-out, offset-path .4s cubic-bezier(.77, -1.17, .75, .84), box-shadow .3s, z-index .3s;
+    z-index: 0;
+}
+
+.png-imgs:hover {
+    max-height: 20%;
+    transform: scale(3);
+    /* on hover, the path gets a bit shorter & flattened & shifted to left/bottom a bit for nicer movement */
+    offset-path: path('m 5 65 q 45-0 90-0 t 90 0 90 0 90-0 90 0');
+    box-shadow: 3px 4px 10px #0006;
+    z-index: 999;
+}
+
+
+/* 5 images */
+.png-imgs:nth-last-child(5):first-child {
+    offset-distance: 0%;
+}
+
+.png-imgs:nth-last-child(4):nth-child(2) {
+    offset-distance: 25%;
+}
+
+.png-imgs:nth-last-child(3):nth-child(3) {
+    offset-distance: 51%;
+}
+
+.png-imgs:nth-last-child(2):nth-child(4) {
+    offset-distance: 75%;
+}
+
+.png-imgs:last-child:nth-child(5) {
+    offset-distance: 100%;
+}
+
 /* Second Exhibition Background Styling */
 .ex-bk2 {
     height: 5rem;
@@ -221,6 +267,7 @@ Size, transformation and tracition  styling of images
     background: linear-gradient(180deg, rgba(240, 155, 98, 1) 0%, rgba(222, 161, 161, 1) 48%, rgba(60, 119, 140, 1) 100%);
 }
 
+/*Gallery 2*/
 .rm-gallery {
     --s: 200px; /* control the size */
     --g: 8px;   /* control the gap */
